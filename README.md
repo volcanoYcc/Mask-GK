@@ -24,7 +24,10 @@ The [GBISC dataset](https://pan.baidu.com/temp), code: temp (or for anyone outsi
 </details>
 
 ## Mask Gaussian kernels
-In file `'generate_probmaps_mask.py'`, `'generate_probmaps_bbox.py'`, and `'generate_probmaps_point.py'` we show our codes of generating Gaussian kernels with grape berry mask, bbox and point annotations in COCO format.
+Our codes for generating Gaussian kernels with grape berry mask, bbox and point annotations are shown in  
+`'datasets/GBISC/generate_probmaps_mask.py'`  
+`'datasets/GBISC/generate_probmaps_bbox.py'`  
+`'datasets/GBISC/generate_probmaps_point.py'`
 
 Example probability maps generated using our proposed mask Gaussian kernel method:
 
