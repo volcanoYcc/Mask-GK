@@ -8,17 +8,17 @@ Our dataset will be publically available after the acceptance of our paper.
 
 1. Kyoho
 
-<img src="https://github.com/volcanoYcc/Segmentation-and-Counting-of-Grape-Berries-in-Field/raw/master/README_images/Kyoho_1.jpg" width="260px" /> <img src="https://github.com/volcanoYcc/Segmentation-and-Counting-of-Grape-Berries-in-Field/raw/master/README_images/Kyoho_2.jpg" width="260px" /> <img src="https://github.com/volcanoYcc/Segmentation-and-Counting-of-Grape-Berries-in-Field/raw/master/README_images/Kyoho_3.jpg" width="260px" />
+<img src="https://github.com/volcanoYcc/Segmentation-and-Counting-of-Grape-Berries-in-Field/raw/master/run/README_images/Kyoho_1.jpg" width="260px" /> <img src="https://github.com/volcanoYcc/Segmentation-and-Counting-of-Grape-Berries-in-Field/raw/master/run/README_images/Kyoho_2.jpg" width="260px" /> <img src="https://github.com/volcanoYcc/Segmentation-and-Counting-of-Grape-Berries-in-Field/raw/master/run/README_images/Kyoho_3.jpg" width="260px" />
 <details>
 <summary>click to show more</summary>
   
 2. Shine Muscat
   
-<img src="https://github.com/volcanoYcc/Segmentation-and-Counting-of-Grape-Berries-in-Field/raw/master/README_images/ShineMuscat_1.jpg" width="260px" /> <img src="https://github.com/volcanoYcc/Segmentation-and-Counting-of-Grape-Berries-in-Field/raw/master/README_images/ShineMuscat_2.jpg" width="260px" /> <img src="https://github.com/volcanoYcc/Segmentation-and-Counting-of-Grape-Berries-in-Field/raw/master/README_images/ShineMuscat_3.jpg" width="260px" />
+<img src="https://github.com/volcanoYcc/Segmentation-and-Counting-of-Grape-Berries-in-Field/raw/master/run/README_images/ShineMuscat_1.jpg" width="260px" /> <img src="https://github.com/volcanoYcc/Segmentation-and-Counting-of-Grape-Berries-in-Field/raw/master/run/README_images/ShineMuscat_2.jpg" width="260px" /> <img src="https://github.com/volcanoYcc/Segmentation-and-Counting-of-Grape-Berries-in-Field/raw/master/run/README_images/ShineMuscat_3.jpg" width="260px" />
 
 3. Summer Black
 
-<img src="https://github.com/volcanoYcc/Segmentation-and-Counting-of-Grape-Berries-in-Field/raw/master/README_images/SummerBlack_1.jpg" width="260px" /> <img src="https://github.com/volcanoYcc/Segmentation-and-Counting-of-Grape-Berries-in-Field/raw/master/README_images/SummerBlack_2.jpg" width="260px" /> <img src="https://github.com/volcanoYcc/Segmentation-and-Counting-of-Grape-Berries-in-Field/raw/master/README_images/SummerBlack_3.jpg" width="260px" />
+<img src="https://github.com/volcanoYcc/Segmentation-and-Counting-of-Grape-Berries-in-Field/raw/master/run/README_images/SummerBlack_1.jpg" width="260px" /> <img src="https://github.com/volcanoYcc/Segmentation-and-Counting-of-Grape-Berries-in-Field/raw/master/run/README_images/SummerBlack_2.jpg" width="260px" /> <img src="https://github.com/volcanoYcc/Segmentation-and-Counting-of-Grape-Berries-in-Field/raw/master/run/README_images/SummerBlack_3.jpg" width="260px" />
 </details>
 
 ## Mask Gaussian kernels
@@ -26,19 +26,19 @@ In file `'generate_probmaps_mask.py'`, `'generate_probmaps_bbox.py'`, and `'gene
 
 Example probability maps generated using our proposed method of creating Gaussian kernels with object instance segmentation annotations:
 
-<img src="https://github.com/volcanoYcc/Segmentation-and-Counting-of-Grape-Berries-in-Field/raw/master/README_images/Kyoho_30.jpg" width="390px" /> <img src="https://github.com/volcanoYcc/Segmentation-and-Counting-of-Grape-Berries-in-Field/raw/master/README_images/Kyoho_30_mask.jpg" width="390px" />
+<img src="https://github.com/volcanoYcc/Segmentation-and-Counting-of-Grape-Berries-in-Field/raw/master/run/README_images/Kyoho_30.jpg" width="390px" /> <img src="https://github.com/volcanoYcc/Segmentation-and-Counting-of-Grape-Berries-in-Field/raw/master/run/README_images/Kyoho_30_mask.jpg" width="390px" />
 <details>
 <summary>click to show more</summary>
-<img src="https://github.com/volcanoYcc/Segmentation-and-Counting-of-Grape-Berries-in-Field/raw/master/README_images/ShineMuscat_13.jpg" width="390px" /> <img src="https://github.com/volcanoYcc/Segmentation-and-Counting-of-Grape-Berries-in-Field/raw/master/README_images/ShineMuscat_13_mask.jpg" width="390px" />
-<img src="https://github.com/volcanoYcc/Segmentation-and-Counting-of-Grape-Berries-in-Field/raw/master/README_images/SummerBlack_8.jpg" width="390px" /> <img src="https://github.com/volcanoYcc/Segmentation-and-Counting-of-Grape-Berries-in-Field/raw/master/README_images/SummerBlack_8_mask.jpg" width="390px" />
+<img src="https://github.com/volcanoYcc/Segmentation-and-Counting-of-Grape-Berries-in-Field/raw/master/run/README_images/ShineMuscat_13.jpg" width="390px" /> <img src="https://github.com/volcanoYcc/Segmentation-and-Counting-of-Grape-Berries-in-Field/raw/master/run/README_images/ShineMuscat_13_mask.jpg" width="390px" />
+<img src="https://github.com/volcanoYcc/Segmentation-and-Counting-of-Grape-Berries-in-Field/raw/master/run/README_images/SummerBlack_8.jpg" width="390px" /> <img src="https://github.com/volcanoYcc/Segmentation-and-Counting-of-Grape-Berries-in-Field/raw/master/run/README_images/SummerBlack_8_mask.jpg" width="390px" />
 </details>
 
 ## Grape berry segmentation and counting
 Grape berry instance segmention results obtained from the probability maps predicted be the neural network using watershed algorithm:
 
-<img src="https://github.com/volcanoYcc/Segmentation-and-Counting-of-Grape-Berries-in-Field/raw/master/README_images/Kyoho_16_pred.jpg" width="260px" /> <img src="https://github.com/volcanoYcc/Segmentation-and-Counting-of-Grape-Berries-in-Field/raw/master/README_images/Kyoho_21_pred.jpg" width="260px" /> <img src="https://github.com/volcanoYcc/Segmentation-and-Counting-of-Grape-Berries-in-Field/raw/master/README_images/Kyoho_48_pred.jpg" width="260px" />
+<img src="https://github.com/volcanoYcc/Segmentation-and-Counting-of-Grape-Berries-in-Field/raw/master/run/README_images/Kyoho_16_pred.jpg" width="260px" /> <img src="https://github.com/volcanoYcc/Segmentation-and-Counting-of-Grape-Berries-in-Field/raw/master/run/README_images/Kyoho_21_pred.jpg" width="260px" /> <img src="https://github.com/volcanoYcc/Segmentation-and-Counting-of-Grape-Berries-in-Field/raw/master/run/README_images/Kyoho_48_pred.jpg" width="260px" />
 <details>
 <summary>click to show more</summary>
-<img src="https://github.com/volcanoYcc/Segmentation-and-Counting-of-Grape-Berries-in-Field/raw/master/README_images/ShineMuscat_28_pred.jpg" width="260px" /> <img src="https://github.com/volcanoYcc/Segmentation-and-Counting-of-Grape-Berries-in-Field/raw/master/README_images/ShineMuscat_30_pred.jpg" width="260px" /> <img src="https://github.com/volcanoYcc/Segmentation-and-Counting-of-Grape-Berries-in-Field/raw/master/README_images/ShineMuscat_39_pred.jpg" width="260px" />
-<img src="https://github.com/volcanoYcc/Segmentation-and-Counting-of-Grape-Berries-in-Field/raw/master/README_images/SummerBlack_20_pred.jpg" width="260px" /> <img src="https://github.com/volcanoYcc/Segmentation-and-Counting-of-Grape-Berries-in-Field/raw/master/README_images/SummerBlack_33_pred.jpg" width="260px" /> <img src="https://github.com/volcanoYcc/Segmentation-and-Counting-of-Grape-Berries-in-Field/raw/master/README_images/SummerBlack_42_pred.jpg" width="260px" />
+<img src="https://github.com/volcanoYcc/Segmentation-and-Counting-of-Grape-Berries-in-Field/raw/master/run/README_images/ShineMuscat_28_pred.jpg" width="260px" /> <img src="https://github.com/volcanoYcc/Segmentation-and-Counting-of-Grape-Berries-in-Field/raw/master/run/README_images/ShineMuscat_30_pred.jpg" width="260px" /> <img src="https://github.com/volcanoYcc/Segmentation-and-Counting-of-Grape-Berries-in-Field/raw/master/run/README_images/ShineMuscat_39_pred.jpg" width="260px" />
+<img src="https://github.com/volcanoYcc/Segmentation-and-Counting-of-Grape-Berries-in-Field/raw/master/run/README_images/SummerBlack_20_pred.jpg" width="260px" /> <img src="https://github.com/volcanoYcc/Segmentation-and-Counting-of-Grape-Berries-in-Field/raw/master/run/README_images/SummerBlack_33_pred.jpg" width="260px" /> <img src="https://github.com/volcanoYcc/Segmentation-and-Counting-of-Grape-Berries-in-Field/raw/master/run/README_images/SummerBlack_42_pred.jpg" width="260px" />
 </details>
