@@ -1,4 +1,4 @@
-# Segmentation and Counting of Grape Berries in Field
+# Mask-GK
 This repository is the official implementation of our paper:  
 [Mask-GK: An Efficient Method Based on Mask Gaussian Kernel for Segmentation and Counting of Grape Berries in Field](https://temp)  
 
