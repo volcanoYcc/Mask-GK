@@ -49,9 +49,9 @@ Project setup
 
 2. Extract the GBISC dataset into 'datasets/GBISC', and put the model weight into 'run/paper_weight'.
 
-3. Run 'datasets/GBISC/generate_probmaps_mask.py' to generate ground truth mask-based probability maps. This process can take several hours, give yourself a short break first.
+3. Run `'datasets/GBISC/generate_probmaps_mask.py'` to generate ground truth mask-based probability maps. This process can take several hours, give yourself a short break first.
 
-4. Run 'eval_vis.py' to evaluate the Mask-GK method and visualize the detection results, run 'train.py' to train Mask-GK yourself.
+4. Run `'eval_vis.py'` to evaluate the Mask-GK method and visualize the detection results, run `'train.py'` to train Mask-GK yourself.
 
 Example grape berry instance segmention results of Mask-GK:
 
