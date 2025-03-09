@@ -38,8 +38,10 @@ Example probability maps generated using our proposed mask Gaussian kernel metho
 <img src="https://github.com/volcanoYcc/Segmentation-and-Counting-of-Grape-Berries-in-Field/raw/master/run/README_images/SummerBlack_8.jpg" width="390px" /> <img src="https://github.com/volcanoYcc/Segmentation-and-Counting-of-Grape-Berries-in-Field/raw/master/run/README_images/SummerBlack_8_mask.jpg" width="390px" />
 </details>
 
-## Grape berry segmentation and counting
-Grape berry instance segmention results obtained from the probability maps predicted be the neural network using watershed algorithm:
+## The Mask-GK method
+In our paper, we introduce a novel high-accuracy detection pipeline named Mask-GK for in field grape berry segmentation and counting.
+
+Grape berry instance segmention results of Mask-GK:
 
 <img src="https://github.com/volcanoYcc/Segmentation-and-Counting-of-Grape-Berries-in-Field/raw/master/run/README_images/Kyoho_16_pred.jpg" width="260px" /> <img src="https://github.com/volcanoYcc/Segmentation-and-Counting-of-Grape-Berries-in-Field/raw/master/run/README_images/Kyoho_21_pred.jpg" width="260px" /> <img src="https://github.com/volcanoYcc/Segmentation-and-Counting-of-Grape-Berries-in-Field/raw/master/run/README_images/Kyoho_48_pred.jpg" width="260px" />
 <details>
