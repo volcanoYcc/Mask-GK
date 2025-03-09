@@ -6,11 +6,8 @@ import json
 import numpy as np
 import h5py
 import math
-import scipy
-import scipy.spatial
 
 from tqdm import tqdm
-import matplotlib.pyplot as plt
 
 def parse_COCO(ann_path,out_length):
     with open(ann_path, 'r') as f:
@@ -57,13 +54,7 @@ def draw_gaussian(heatmap, center, radius, k=1):
 
     masked_heatmap = heatmap[y - top:y + bottom, x - left:x + right]
     masked_gaussian = gaussian[radius[1] - top:radius[1] + bottom, radius[0] - left:radius[0] + right]
-    '''
-    plt.subplot(121)
-    plt.imshow(gaussian)
-    plt.subplot(122)
-    plt.imshow(masked_gaussian)
-    plt.show(block=True)
-    '''
+
     if min(masked_gaussian.shape) > 0 and min(masked_heatmap.shape) > 0:  # TODO debug
         np.maximum(masked_heatmap, masked_gaussian * k, out=masked_heatmap)
 
@@ -82,39 +73,37 @@ if __name__ == '__main__':
     base_dir = sys.path[0]
     out_length = 2048
 
-    ann_path = os.path.join(base_dir,'annotations_COCO.json')
-    images,annos = parse_COCO(ann_path,out_length)
+    ann_file_names = ['annotations_COCO_train.json','annotations_COCO_val.json','annotations_COCO_test.json']
 
-    for index, (image_id, values) in enumerate(annos.items()):
-        img_name = images[image_id].get('file_name')
-        height = images[image_id].get('height')
-        width = images[image_id].get('width')
-        scale_factor = out_length/max(height,width)
-        berry_targets = values.get('objects')
-        #print(index,img_name,height,width,len(berry_targets))
+    for ann_file_name in ann_file_names:
+        ann_path = os.path.join(base_dir,ann_file_name)
+        images,annos = parse_COCO(ann_path,out_length)
 
-        img = cv2.imdecode(np.fromfile(os.path.join(base_dir,'images',img_name), dtype=np.uint8), cv2.IMREAD_COLOR)
-        img = cv2.resize(img, dsize=(int(width*scale_factor), int(height*scale_factor)))
+        for index, (image_id, values) in enumerate(annos.items()):
+            img_name = images[image_id].get('file_name')
+            height = images[image_id].get('height')
+            width = images[image_id].get('width')
+            scale_factor = out_length/max(height,width)
+            berry_targets = values.get('objects')
 
-        final_probmap = np.zeros((img.shape[0],img.shape[1]))
-        for berry_target in tqdm(berry_targets):
-            x1,y1 = np.min(np.array(berry_target)[:,0]),np.min(np.array(berry_target)[:,1])
-            x2,y2 = np.max(np.array(berry_target)[:,0]),np.max(np.array(berry_target)[:,1])
-            if x2 == int(img.shape[1]):
-                x2-=1
-            if y2 == int(img.shape[0]):
-                y2-=1
-            h, w = y2 - y1, x2 - x1
-            radius = (math.ceil(w/2),math.ceil(h/2))
-            ct = np.array([(x1 + x2) / 2, (y1 + y2) / 2], dtype=np.float32)
-            ct_int = ct.astype(np.int32)
-            final_probmap = draw_gaussian(final_probmap, ct_int, radius)
-            '''
-            plt.imshow(final_probmap)
-            plt.show(block=True)
-            '''
-            
-        with h5py.File(os.path.join(base_dir,'probmaps_bbox',img_name).replace('.jpg','.h5'), 'w') as hf:
-            hf['probmap'] = final_probmap
-            hf['count'] = len(berry_targets)
-        cv2.imencode('.jpg', final_probmap*255)[1].tofile(os.path.join(base_dir,'probmaps_bbox',img_name))
+            img = cv2.imdecode(np.fromfile(os.path.join(base_dir,'images',img_name), dtype=np.uint8), cv2.IMREAD_COLOR)
+            img = cv2.resize(img, dsize=(int(width*scale_factor), int(height*scale_factor)))
+
+            final_probmap = np.zeros((img.shape[0],img.shape[1]))
+            for berry_target in tqdm(berry_targets):
+                x1,y1 = np.min(np.array(berry_target)[:,0]),np.min(np.array(berry_target)[:,1])
+                x2,y2 = np.max(np.array(berry_target)[:,0]),np.max(np.array(berry_target)[:,1])
+                if x2 == int(img.shape[1]):
+                    x2-=1
+                if y2 == int(img.shape[0]):
+                    y2-=1
+                h, w = y2 - y1, x2 - x1
+                radius = (math.ceil(w/2),math.ceil(h/2))
+                ct = np.array([(x1 + x2) / 2, (y1 + y2) / 2], dtype=np.float32)
+                ct_int = ct.astype(np.int32)
+                final_probmap = draw_gaussian(final_probmap, ct_int, radius)
+                
+            with h5py.File(os.path.join(base_dir,'probmaps_bbox',img_name).replace('.jpg','.h5'), 'w') as hf:
+                hf['probmap'] = final_probmap
+                hf['count'] = len(berry_targets)
+            cv2.imencode('.jpg', final_probmap*255)[1].tofile(os.path.join(base_dir,'probmaps_bbox',img_name))
