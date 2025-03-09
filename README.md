@@ -47,7 +47,7 @@ Project setup
 (2). The GBISC dataset.  
 (3). Our [pretrained model weights](https://pan.baidu.com/s/temp), code: temp (or for anyone outside China: [pretrained model weights](https://drive.google.com/file/d/temp)).
 
-2. Extract the GBISC_dataset into 'datasets/GBISC', and put the model weight into 'run/paper_weight'.
+2. Extract the GBISC dataset into 'datasets/GBISC', and put the model weight into 'run/paper_weight'.
 
 3. Run 'datasets/GBISC/generate_probmaps_mask.py' to generate ground truth mask-based probability maps. This process can take several hours, give yourself a short break first.
 
