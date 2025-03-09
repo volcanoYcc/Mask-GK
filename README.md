@@ -41,7 +41,19 @@ Example probability maps generated using our proposed mask Gaussian kernel metho
 ## The Mask-GK method
 In our paper, we introduce a novel high-accuracy detection pipeline named Mask-GK for in field grape berry segmentation and counting.
 
-Grape berry instance segmention results of Mask-GK:
+Project setup  
+1. To setup our project on your own device, you need to download all the following files:
+(1). All the code in this repository.
+(2). The GBISC dataset.  
+(3). Our [pretrained model weights](https://pan.baidu.com/s/temp), code: temp (or for anyone outside China: [pretrained model weights](https://drive.google.com/file/d/temp)).
+
+2. Extract the GBISC_dataset into 'datasets/GBISC', and put the model weight into 'run/paper_weight'.
+
+3. Run 'datasets/GBISC/generate_probmaps_mask.py' to generate ground truth mask-based probability maps. This process can take several hours, give yourself a short break first.
+
+4. Run 'eval_vis.py' to evaluate the Mask-GK method and visualize the detection results, run 'train.py' to train Mask-GK yourself.
+
+Example grape berry instance segmention results of Mask-GK:
 
 <img src="https://github.com/volcanoYcc/Segmentation-and-Counting-of-Grape-Berries-in-Field/raw/master/run/README_images/Kyoho_16_pred.jpg" width="260px" /> <img src="https://github.com/volcanoYcc/Segmentation-and-Counting-of-Grape-Berries-in-Field/raw/master/run/README_images/Kyoho_21_pred.jpg" width="260px" /> <img src="https://github.com/volcanoYcc/Segmentation-and-Counting-of-Grape-Berries-in-Field/raw/master/run/README_images/Kyoho_48_pred.jpg" width="260px" />
 <details>
