@@ -5,7 +5,7 @@ This repository is the official implementation of our paper:
 ## GBISC dataset
 The GBISC dataset was captured by us using an iPhone 12 smartphone, an iPhone 13 smartphone, and an HUAWEI mate 40 pro smartphone within vineyards in Longquanyi and Shuangliu districts in Chengdu, Sichuan province, China, in July 2023. This dataset comprises 150 high-resolution RGB images of three distinct grape varieties: Kyoho, Shine Muscat and Summer Black. All images were captured in a frontal pose with approximately the same distance to the grape vines. We add instance segmentation annotations for a total of 50718 grape berries in these images in COCO format. The original size of images are 4032×3024 and 4096×3072, and are resized to 2048×1536 in model training and testing.
 
-Our dataset can be downloaded from the following links:  
+Our dataset can be obtained from the following links:  
 The [GBISC dataset](https://pan.baidu.com/temp), code: temp (or for anyone outside China: [GBISC dataset](https://drive.google.com/temp)).
 
 1. Kyoho
