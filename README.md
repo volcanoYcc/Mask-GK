@@ -45,7 +45,7 @@ Project setup
 1. To setup our project on your own device, you need to download all the following files:  
 (1). All the code in this repository.  
 (2). The GBISC dataset.  
-(3). Our [pretrained model weights](https://pan.baidu.com/s/temp), code: temp (or for anyone outside China: [pretrained model weights](https://drive.google.com/file/d/temp)).
+(3). Our [pretrained model weight](https://pan.baidu.com/s/temp), code: temp (or for anyone outside China: [pretrained model weight](https://drive.google.com/file/d/temp)).
 
 2. Extract the GBISC dataset into `'datasets/GBISC'`, and put the model weight into `'run/paper_weight'`.
 
