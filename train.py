@@ -138,8 +138,10 @@ if __name__ == '__main__':
     optimizer = optim.AdamW(params, config['lr_start'])
     schedular = optim.lr_scheduler.CosineAnnealingLR(optimizer, T_max=config['max_epoch'], eta_min=config['lr_finish'])
 
+    if not os.path.exists(os.path.join(base_dir,'run','train')):
+        os.mkdir(os.path.join(base_dir,'run','train'))
     train_name = time.strftime("%Y-%m-%d-%H-%M-%S", time.localtime())
-    os.mkdir(os.path.join(base_dir, 'run', 'train',train_name))
+    os.mkdir(os.path.join(base_dir,'run','train',train_name))
 
     outputfile = open(os.path.join(base_dir,'run','train',train_name,"log.txt"), 'w')
     outputfile.close()

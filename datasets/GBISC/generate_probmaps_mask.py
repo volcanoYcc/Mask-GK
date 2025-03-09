@@ -55,6 +55,9 @@ if __name__ == '__main__':
     base_dir = sys.path[0]
     out_length = 2048
 
+    if not os.path.exists(os.path.join(base_dir,'probmaps_mask')):
+        os.mkdir(os.path.join(base_dir,'probmaps_mask'))
+
     ann_file_names = ['annotations_COCO_train.json','annotations_COCO_val.json','annotations_COCO_test.json']
 
     for ann_file_name in ann_file_names:

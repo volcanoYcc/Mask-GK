@@ -195,6 +195,10 @@ if __name__ == '__main__':
               }
     
     base_dir = sys.path[0]
+
+    if not os.path.exists(os.path.join(base_dir,'run','eval','vis')):
+        os.mkdir(os.path.join(base_dir,'run','eval','vis'))
+
     val_dataset = ProbmapDataset(train=False, base_dir=os.path.join(base_dir, 'datasets', 'GBISC'), data_split=config['split']+'.txt', probmap_type=config['probmap_type'])
     val_loader = torch.utils.data.DataLoader(val_dataset, batch_size=1, shuffle=False, num_workers=4)
 
