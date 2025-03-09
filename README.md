@@ -42,8 +42,8 @@ Example probability maps generated using our proposed mask Gaussian kernel metho
 In our paper, we introduce a novel high-accuracy detection pipeline named Mask-GK for in field grape berry segmentation and counting.
 
 Project setup  
-1. To setup our project on your own device, you need to download all the following files:
-(1). All the code in this repository.
+1. To setup our project on your own device, you need to download all the following files:  
+(1). All the code in this repository.  
 (2). The GBISC dataset.  
 (3). Our [pretrained model weights](https://pan.baidu.com/s/temp), code: temp (or for anyone outside China: [pretrained model weights](https://drive.google.com/file/d/temp)).
 
