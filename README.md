@@ -1,6 +1,6 @@
 # Mask-GK
 This repository is the official implementation of our paper:  
-[Mask-GK: An Efficient Method Based on Mask Gaussian Kernel for Segmentation and Counting of Grape Berries in Field](https://temp)  
+[Mask-GK: An Efficient Method Based on Mask Gaussian Kernel for Segmentation and Counting of Grape Berries in Field](https://www.sciencedirect.com/science/article/pii/S0168169925003928)  
 
 ## GBISC dataset
 The GBISC dataset was captured by us using an iPhone 12 smartphone, an iPhone 13 smartphone, and an HUAWEI mate 40 pro smartphone within vineyards in Longquanyi and Shuangliu districts in Chengdu, Sichuan province, China, in July 2023. This dataset comprises 150 high-resolution RGB images of three distinct grape varieties: Kyoho, Shine Muscat and Summer Black. All images were captured in a frontal pose with approximately the same distance to the grape vines. We add instance segmentation annotations for a total of 50718 grape berries in these images in COCO format. The original size of images are 4032×3024 and 4096×3072, and are resized to 2048×1536 in model training and testing.
